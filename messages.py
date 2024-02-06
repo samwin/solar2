@@ -1,0 +1,1 @@
+values_in = [HumanMessage(content='hello'), AIMessage(content='Hello! How can I assist you today with your solar panel inquiries?')]

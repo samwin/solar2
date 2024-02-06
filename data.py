@@ -1,0 +1,5 @@
+values = {"type": "FeatureCollection", "features": [{"id": "37106", "type": "Feature", "properties": {"id": 36913, "annual": 6.08, "jan": 5.58, "feb": 6.43, "mar": 6.85, "apr": 6.99, "may": 6.7, "jun": 6.47, "jul": 5.96, "aug": 5.54, "sep": 5.71, "oct": 5.89, "nov": 5.62, "dec": 5.24, "janmin": 4.94, "febmin": 6.0, "marmin": 6.49, "aprmin": 6.54, "maymin": 5.83, "junmin": 6.11, "julmin": 5.4, "augmin": 4.73, "sepmin": 5.29, "octmin": 5.38, "novmin": 5.06, "decmin": 4.82, "janmax": 6.19, "febmax": 6.96, "marmax": 7.33, "aprmax": 7.5, "maymax": 7.29, "junmax": 7.04, "julmax": 6.53, "augmax": 6.76, "sepmax": 6.41, "octmax": 6.47, "novmax": 6.02, "decmax": 5.59, "numyears": 22}, "geometry": {"type": "MultiPolygon", "coordinates": [[[[12.0, 12.0], [12.0, 13.0], [13.0, 13.0], [13.0, 12.0], [12.0, 12.0]]]]}}]}
+# print(values["features"][0]['properties'])
+for key, val in values["features"][0]['properties'].items():
+    with open('sam.txt', 'a') as f:
+        f.write(f"{key} : {val}")

@@ -1,0 +1,8 @@
+openai
+fastapi
+uvicorn
+langchain
+solarpy
+shapely
+geopandas
+pyimgur
